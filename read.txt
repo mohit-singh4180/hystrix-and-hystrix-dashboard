@@ -1,0 +1,18 @@
+Hystrix dashboard Home page link
+
+open hystrix dashboard
+http://localhost:9092/hystrix
+
+try URL
+http://localhost:9092/hystrix.stream
+
+
+open another browser
+keep hitting this URL
+http://localhost:9092/rest/hello
+http://localhost:9092/rest/hellosecond
+
+it will generate success nad failure and same can be seen under
+
+this URL
+http://localhost:9092/hystrix/monitor?stream=http%3A%2F%2Flocalhost%3A9092%2Fhystrix.stream
